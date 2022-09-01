@@ -28,6 +28,7 @@ android {
 
     defaultConfig {
         minSdkVersion 19
+        targetSdkVersion 31
     }
     sourceSets {
         main {
@@ -35,6 +36,10 @@ android {
                 srcDir '../protos'
             }
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
